@@ -128,13 +128,13 @@ friends: [
 
 ### Comment
 
-博客采用 [网易云跟帖](https://gentie.163.com/) 评论系统。你需要去注册一个网易的账号，点击“获取代码”，然后找到其中类似 `productKey: "68cb5cb1ac1145f585ca0e38c1111b72"` 的部分。将后面的一串代码复制到 *_config.yml* 文件中：
+博客采用 [友言](http://www.uyan.cc/) 评论系统。你需要去注册一个 JiaThis 通行证，点击“获取代码”，然后找到其中类似 `uid=2138472` 的部分。将后面的一串代码复制到 *_config.yml* 文件中：
 
 ```
-gt_product_Key: 68cb5cb1ac1145f585ca0e38c1111b72
+uy_uid: 2138472
 ```
 
-**注意，这个 product key 要用你们自己的。**
+**注意，这个 id 要用你们自己的。**
 
 ### Analytics
 
