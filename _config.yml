@@ -5,7 +5,7 @@ header-img: img/bg/bg_index.jpg
 email: jsksxs360@163.com
 description: ""
 keyword: ""
-url: "http://jsksxs360.coding.me"              # your host, for absolute URL
+url: "http://jsksxs360.github.io"              # your host, for absolute URL
 baseurl: "/xs-huxblog"                             # for example, '/blog' if your blog hosted on 'host/blog'
 
 # SNS settings
