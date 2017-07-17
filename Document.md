@@ -106,10 +106,6 @@ featured-tags: true
 featured-condition-size: 1     # A tag will be featured if the size of it is more than this condition value
 ```
 
-唯一需要注意的是 featured-condition-size: A tag will be featured if the size of it is more than this condition value. （也不知道是想表达什么意思，请作者解答）
-
-内部有一个条件模板 `{% if tag[1].size > {{site.featured-condition-size}} %}` 是用来做筛选过滤的。
-
 ### Friends
 
 友情链接部分。这会在全部页面显示。
