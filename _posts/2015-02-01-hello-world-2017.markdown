@@ -1,0 +1,99 @@
+---
+layout:     post
+title:      "Hello world, 2017"
+subtitle:   "欢迎使用"
+date:       2017-02-01 12:00:00
+author:     "Xiaosheng"
+header-img: "img/bg/hello_world.jpg"
+catalog: true
+tags:
+    - 说明
+---
+
+这是 xs-huxblog 博客模板的一篇示例文档，使用 Markdown 语法编写。
+
+Markdown 是一种非常简单的排版语法，几分钟就能够基本掌握。使用 Markdown 语法来编写博客将是一件非常惬意的事，你从此不需要为了各种各样的排版效果而浪费精力，而是将注意力集中在编写内容本身。
+
+![1](/img/avatar-xs.jpg)
+
+我是小昇，接下来由我简单介绍一下文章支持的语法格式：
+
+- 基本 Markdown 语法
+- 各种语言的代码渲染
+- LaTeX 数学公式渲染
+
+## 基本 Markdown 语法
+
+> Markdown 是一种轻量级标记语言，它允许人们使用易读易写的纯文本格式编写文档，然后转换成格式丰富的HTML页面。    —— [维基百科](https://zh.wikipedia.org/wiki/Markdown)
+
+详细语法请参考[《Markdown 语法说明》](http://wowubuntu.com/markdown/)。
+
+### 表格
+
+| 项目       |     价格 |  数量  |
+| :------- | -----: | :--: |
+| Computer | 1600 元 |  5   |
+| Phone    |   12 元 |  12  |
+| Pipe     |    1 元 | 234  |
+
+### 列表
+
+#### 无序列表
+
+- 汽车
+- 飞机
+- 火车
+
+#### 有序列表
+
+1. 汽车
+2. 飞机
+3. 火车
+
+#### 嵌套列表
+
+- 交通工具
+  - 汽车
+    - 轿车
+    - 客车
+  - 飞机
+  - 火车
+- 可选线路
+  - 线路1
+  - 线路2
+
+##  各种语言的代码渲染
+
+本博客使用 [highlight.js](https://highlightjs.org/) 对代码进行进行渲染，选用的主题为 Google code 主题，下面为展示效果：
+
+**C**
+
+```c
+#include <stdio.h>
+int main()
+{
+    printf("Hello World!/n");
+    return 0;
+}
+```
+
+**Java**
+
+```java
+class Hello
+{
+    public static void main(String ars[])
+    {
+        System.out.print("Hello World!/n");
+    }
+}
+```
+
+## LaTeX 数学公式渲染
+
+本博客使用 [MathJax](https://www.mathjax.org/) 对 LaTex 格式的数学公式进行渲染，下面为展示效果：
+
+同时支持行内公式 $\sqrt{a+b}$ 和行间公式
+
+$$x=\frac{-b\pm\sqrt{b^2-4ac}}{2a}$$
+

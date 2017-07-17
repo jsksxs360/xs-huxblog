@@ -1,0 +1,66 @@
+# Site settings
+title: Xs-Huxblog
+SEOTitle: Xs-HuxBlog
+header-img: img/bg/bg_index.jpg
+email: jsksxs360@163.com
+description: ""
+keyword: ""
+url: "http://jsksxs360.coding.me"              # your host, for absolute URL
+baseurl: "/xs-huxblog"                             # for example, '/blog' if your blog hosted on 'host/blog'
+
+# SNS settings
+weibo_username: jsksxs360
+zhihu_username: jsksxs360
+github_username: jsksxs360
+
+# Build settings
+# from 2016, 'pygments' is unsupported on GitHub Pages. Use 'rouge' for highlighting instead.
+highlighter: rouge
+permalink: pretty
+paginate: 10
+exclude: ["less","node_modules","Gruntfile.js","package.json","README.md","README.zh.md"]
+anchorjs: true                          # if you want to customize anchor. check out line:181 of `post.html`
+
+# Gems
+# to support local preview for Jekyll 3.0
+gems: [jekyll-paginate]
+
+# Markdown settings
+# replace redcarpet to kramdown,
+# although redcarpet can auto highlight code, the lack of header-id make the catalog impossible, so I switch to kramdown
+# document: http://jekyllrb.com/docs/configuration/#kramdown
+markdown: kramdown
+kramdown:
+  input: GFM                            # use Github Flavored Markdown !important
+
+# UY comment
+uy: false                               # whether or not using uy comment
+uy_uid: 2138472
+
+# Baidu Share
+bd_share: true                          # whether or not using baidu share
+
+# Analytics settings
+# Baidu Analytics
+ba_track_id: 07529a93af5fa9f808261a1318c3aba4
+
+# Sidebar settings
+sidebar: true                           # whether or not using Sidebar.
+sidebar-about-description: "专注IT，乐于分享。"
+sidebar-avatar: /img/avatar-xs.jpg      # use absolute URL, seeing it's used in both `/` and `/about/`
+
+# Featured Tags
+featured-tags: true                     # whether or not using Feature-Tags
+featured-condition-size: 1              # A tag will be featured if the size of it is more than this condition value
+
+# Friends
+friends: [
+    {
+        title: "Hux Blog",
+        href: "http://huangxuan.me"
+    },
+    {
+        title: "Xs blog",
+        href: "http://xiaosheng.me"
+    }
+]
