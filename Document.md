@@ -9,8 +9,7 @@
   * [自我简介](#mini-about-me)
   * [标签云](#featured-tags)
   * [好友链接](#friends)
-* 评论与 Baidu Analytics
-  * [评论](#comment)
+* Baidu Analytics
   * [网站分析](#analytics)
 * 高级部分
   * [标题底图](#header-image)
@@ -125,16 +124,6 @@ friends: [
     }
 ]
 ```
-
-### Comment
-
-博客采用 [友言](http://www.uyan.cc/) 评论系统。你需要去注册一个 JiaThis 通行证，点击“获取代码”，然后找到其中类似 `uid=2138472` 的部分。将后面的一串代码复制到 *_config.yml* 文件中：
-
-```
-uy_uid: 2138472
-```
-
-**注意，这个 id 要用你们自己的。**
 
 ### Analytics
 

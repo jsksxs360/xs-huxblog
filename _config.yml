@@ -21,9 +21,8 @@ paginate: 10
 exclude: ["less","node_modules","Gruntfile.js","package.json","README.md","README.zh.md"]
 anchorjs: true                          # if you want to customize anchor. check out line:181 of `post.html`
 
-# Gems
-# to support local preview for Jekyll 3.0
-gems: [jekyll-paginate]
+# Plugins
+plugins: [jekyll-paginate]
 
 # Markdown settings
 # replace redcarpet to kramdown,
@@ -32,10 +31,6 @@ gems: [jekyll-paginate]
 markdown: kramdown
 kramdown:
   input: GFM                            # use Github Flavored Markdown !important
-
-# UY comment
-uy: false                               # whether or not using uy comment
-uy_uid: 2138472
 
 # Baidu Share
 bd_share: true                          # whether or not using baidu share
