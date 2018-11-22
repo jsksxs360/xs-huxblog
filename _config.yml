@@ -9,6 +9,7 @@ url: "http://jsksxs360.github.io"              # your host, for absolute URL
 baseurl: "/xs-huxblog"                             # for example, '/blog' if your blog hosted on 'host/blog'
 
 # SNS settings
+douban_username: 138483825
 weibo_username: jsksxs360
 zhihu_username: jsksxs360
 github_username: jsksxs360

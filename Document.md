@@ -29,10 +29,11 @@
 
 ```
 # Site settings
-title: 小昇的博客	              # 你的博客网站标题
-SEOTitle: Xs Blog	           # 在后面会详细谈到
-description: "Cool Blog"	   # 随便说点，描述一下
+title: 小昇的博客                # 你的博客网站标题
+SEOTitle: Xs Blog              # 在后面会详细谈到
+description: "Cool Blog"       # 随便说点，描述一下
 # SNS settings
+douban_username: 138483825     # 你的豆瓣账号
 github_username: jsksxs360     # 你的github账号
 weibo_username: jsksxs360      # 你的微博账号
 zhihu_username: jsksxs360      # 你的知乎账号
@@ -40,8 +41,7 @@ zhihu_username: jsksxs360      # 你的知乎账号
 # paginate: 10                 # 一页你准备显示几篇文章
 ```
 
-关于评论系统和网站统计的相关设置，请参考
-[评论](#comment) 和 [网站分析](#analytics)。
+关于评论系统和网站统计的相关设置，请参考 [网站分析](#analytics)。
 
 Jekyll 官方网站还有很多的参数可以调，比如设置文章的链接形式...网址在这里：[Jekyll - Official Site](http://jekyllrb.com/) 中文版的在这里：[Jekyll中文](http://jekyllcn.com/)。
 
@@ -87,8 +87,6 @@ sidebar-avatar: /img/avatar-xs.jpg     #你的大头贴，请使用绝对地址.
 ```
 
 侧边栏是响应式布局的，当屏幕尺寸小于 992px 的时候，侧边栏就会移动到底部。具体请见bootstrap栅格系统 <http://v3.bootcss.com/css/>。如果你不想使用侧边栏，可以设置 `sidebar: false`。
-
-
 
 ### Mini About Me
 
