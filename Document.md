@@ -166,16 +166,16 @@ $ sudo apt-get install ruby2.1-dev
 
 因为我们要通过 gem 来安装 jekyll，所以首先要确保 gem 已正确安装。输入 `gem -v`，若正确显示 gem 的版本号则安装成功。若报错则可能是因为未安装 Nodejs，可以通过 `sudo apt-get install nodejs` 来安装。
 
-为了加快安装速度，建议将 gem 的数据源改为淘宝网的 RubyGems 镜像。
+为了加快安装速度，建议将 gem 的数据源改为 [**Ruby China**](https://gems.ruby-china.com/) 的 RubyGems 镜像。
 
 ```
 $ gem sources --remove https://rubygems.org/
 $ gem sources --remove http://rubygems.org/
-$ gem sources -a https://ruby.taobao.org/
+$ gem sources -a https://gems.ruby-china.com
 $ gem sources -l
 *** CURRENT SOURCES ***
-https://ruby.taobao.org
-# 请确保只有 ruby.taobao.org
+https://gems.ruby-china.com
+# 请确保只有 https://gems.ruby-china.com
 ```
 
 然后安装 jekyll 和 rdiscount。
