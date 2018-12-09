@@ -64,7 +64,7 @@ Markdown 是一种非常简单的排版语法，几分钟就能够基本掌握�
 
 ##  各种语言的代码渲染
 
-本博客使用 [highlight.js](https://highlightjs.org/) 对代码进行进行渲染，选用的主题为 Google code 主题，下面为展示效果：
+本博客使用 [highlight.js](https://highlightjs.org/) 对代码进行进行渲染，选用 Github 主题，下面为展示效果：
 
 **C**
 
@@ -95,5 +95,6 @@ class Hello
 
 同时支持行内公式 $\sqrt{a+b}$ 和行间公式
 
-$$x=\frac{-b\pm\sqrt{b^2-4ac}}{2a}$$
-
+$$
+x=\frac{-b\pm\sqrt{b^2-4ac}}{2a}
+$$
