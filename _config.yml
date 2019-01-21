@@ -36,6 +36,10 @@ kramdown:
 # Baidu Share
 bd_share: true                          # whether or not using baidu share
 
+# Livere
+labili: false                           # whether or not using Livere
+labili_uid: MTAyMC80MjI1Ny8xODgwNA==    # data uid
+
 # Analytics settings
 # Baidu Analytics
 ba_track_id: 07529a93af5fa9f808261a1318c3aba4
@@ -43,7 +47,7 @@ ba_track_id: 07529a93af5fa9f808261a1318c3aba4
 # Sidebar settings
 sidebar: true                           # whether or not using Sidebar.
 sidebar-about-description: "专注IT，乐于分享。"
-sidebar-avatar: /img/avatar-xs.jpg      # use absolute URL, seeing it's used in both `/` and `/about/`
+sidebar-avatar: /xs-huxblog/img/avatar-xs.jpg      # use absolute URL, seeing it's used in both `/` and `/about/`
 
 # Featured Tags
 featured-tags: true                     # whether or not using Feature-Tags

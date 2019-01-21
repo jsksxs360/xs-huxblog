@@ -9,6 +9,8 @@
   * [自我简介](#mini-about-me)
   * [标签云](#featured-tags)
   * [好友链接](#friends)
+* 来必力评论系统
+  * [网站评论](#comments)
 * Baidu Analytics
   * [网站分析](#analytics)
 * 高级部分
@@ -122,6 +124,20 @@ friends: [
     }
 ]
 ```
+
+### Comments
+
+考虑到多说已经停运，而目前国内的评论系统大多需要备案，因此这里选择来自韩国的[来必力](https://www.livere.com/)。来必力对中文的支持还不错，用户可以通过 QQ、微信、微博等方式登录进行评论，加载速度也还可以。
+
+如果需要使用，请先去[来必力](https://www.livere.com/)官网注册一个账号，然后在管理页面的代码管理中，找到类似 `<div id="lv-container" data-id="city" data-uid="MTAyMC80MjI1Ny8xODgwNA==">` 的部分，将 data-uid 之后的代码复制到 *_config.yml* 文件中，并且将 `labili` 设置为 true：
+
+```
+# Livere
+labili: true
+labili_uid: MTAyMC80MjI1Ny8xODgwNA==
+```
+
+**注意：labili_uid一定要替换成自己网站的uid**
 
 ### Analytics
 
