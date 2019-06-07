@@ -5,7 +5,7 @@
 
 ![exapmle](example.jpg)
 
-- 你可以访问 **[这里](http://xiaosheng.me/xs-huxblog/)** 预览该主题。
+- 你可以访问 **[这里](https://jsksxs360.github.io/xs-huxblog/)** 预览该主题。
 - 关于如何使用该主题，请点击查看 **[说明文档](https://github.com/jsksxs360/xs-huxblog/blob/master/Document.md)** 。
 - [**下载**](https://github.com/jsksxs360/xs-huxblog/archive/master.zip)本主题。
 
