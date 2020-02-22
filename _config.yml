@@ -33,9 +33,6 @@ markdown: kramdown
 kramdown:
   input: GFM                            # use Github Flavored Markdown !important
 
-# Baidu Share
-bd_share: true                          # whether or not using baidu share
-
 # Livere
 labili: false                           # whether or not using Livere
 labili_uid: MTAyMC80MjI1Ny8xODgwNA==    # data uid
