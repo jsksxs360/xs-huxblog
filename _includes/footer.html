@@ -38,6 +38,13 @@
                 </ul>
                 <p class="copyright text-muted">
                     Copyright &copy; {{ site.title }} {{ site.time | date: '%Y' }}
+                    <br>
+                    Powered by <a href="https://github.com/jsksxs360/xs-huxblog">Xs-Hux Blog</a> |
+                    <iframe
+                        style="margin-left: 2px; margin-bottom:-5px;"
+                        frameborder="0" scrolling="0" width="100px" height="20px"
+                        src="https://ghbtns.com/github-btn.html?user=jsksxs360&repo=xs-huxblog&type=star&count=true" >
+                    </iframe>
                 </p>
             </div>
         </div>
@@ -53,13 +60,13 @@
 </script>
 
 <!-- jQuery -->
-<script src="{{ "/js/jquery.min.js " | prepend: site.baseurl }}"></script>
+<script src='{{ "/js/jquery.min.js " | prepend: site.baseurl }}'></script>
 
 <!-- Bootstrap Core JavaScript -->
-<script src="{{ "/js/bootstrap.min.js " | prepend: site.baseurl }}"></script>
+<script src='{{ "/js/bootstrap.min.js " | prepend: site.baseurl }}'></script>
 
 <!-- Custom Theme JavaScript -->
-<script src="{{ "/js/hux-blog.min.js " | prepend: site.baseurl }}"></script>
+<script src='{{ "/js/hux-blog.min.js " | prepend: site.baseurl }}'></script>
 
 <!-- async load function -->
 <script>
@@ -75,24 +82,24 @@
 
 <!-- Highlight.js -->
 <script>
-    async("//cdn.bootcss.com/highlight.js/9.13.1/highlight.min.js", function(){
+    async("https://cdn.bootcss.com/highlight.js/9.13.1/highlight.min.js", function(){
         hljs.initHighlightingOnLoad();
     })
 </script>
 
 <!-- jquery.tagcloud.js -->
 <script>
-    // only load tagcloud.js in tag.html
-    if($('#tag_cloud').length !== 0){
-        async('{{ "/js/jquery.tagcloud.js" | prepend: site.baseurl }}',function(){
-            $.fn.tagcloud.defaults = {
-                //size: {start: 1, end: 1, unit: 'em'},
-                color: {start: '#bbbbee', end: '#0085a1'},
-            };
-            $('#tag_cloud a').tagcloud();
-        })
-    }
+    async('{{ "/js/jquery.tagcloud.js" | prepend: site.baseurl }}',function(){
+        $.fn.tagcloud.defaults = {
+            //size: {start: 1, end: 1, unit: 'em'},
+            color: {start: '#bbbbee', end: '#2f93b4'},
+        };
+        $('#tag_cloud a').tagcloud();
+    })
 </script>
+<script src='{{ "/js/archive.js " | prepend: site.baseurl }}'></script>
+<script src='{{ "/js/snackbar.js " | prepend: site.baseurl }}'></script>
+<script src='{{ "/js/sw-registration.js " | prepend: site.baseurl }}'></script>
 
 <!--fastClick.js -->
 <script>
