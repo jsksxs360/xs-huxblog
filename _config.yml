@@ -34,7 +34,7 @@ kramdown:
   input: GFM                            # use Github Flavored Markdown !important
 
 # Livere
-labili: true                           # whether or not using Livere
+labili: false                           # whether or not using Livere
 labili_uid: MTAyMC80MjI1Ny8xODgwNA==    # data uid
 
 # Analytics settings
