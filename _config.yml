@@ -34,7 +34,7 @@ kramdown:
   input: GFM                            # use Github Flavored Markdown !important
 
 # Livere
-labili: false                           # whether or not using Livere
+labili: true                           # whether or not using Livere
 labili_uid: MTAyMC80MjI1Ny8xODgwNA==    # data uid
 
 # Analytics settings
@@ -58,6 +58,6 @@ friends: [
     },
     {
         title: "Xs blog",
-        href: "http://xiaosheng.me"
+        href: "http://xiaosheng.run"
     }
 ]
