@@ -47,10 +47,32 @@ layout: default
 
                 <hr style="visibility: hidden;">
 
-                <!-- 来必力City版安装代码 -->
+                <!-- 来必力 -->
                 {% if site.labili %}
                 <div id="lv-container" data-id="city" data-uid="{{ site.labili_uid }}">
+                    <script type="text/javascript">
+                    (function(d, s) {
+                        var j, e = d.getElementsByTagName(s)[0];
+                        if (typeof LivereTower === 'function') { return; }
+                        j = d.createElement(s);
+                        j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+                        j.async = true;
+                        e.parentNode.insertBefore(j, e);
+                    })(document, 'script');
+                    </script>
                 </div>
+                {% endif %}
+                <!-- Valine -->
+                {% if site.valine %}
+                <script src='//unpkg.com/valine/dist/Valine.min.js'></script>
+                <div id="vcomments"></div>
+                <script>
+                  new Valine({
+                    el: '#vcomments',
+                    appId: '{{ site.valine_appId }}',
+                    appKey: '{{ site.valine_appKey }}'
+                  })
+                </script>
                 {% endif %}
 
                 <hr>
@@ -93,19 +115,6 @@ layout: default
         </div>
     </div>
 </article>
-
-{% if site.labili %}
-<script type="text/javascript">
-   (function(d, s) {
-       var j, e = d.getElementsByTagName(s)[0];
-       if (typeof LivereTower === 'function') { return; }
-       j = d.createElement(s);
-       j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
-       j.async = true;
-       e.parentNode.insertBefore(j, e);
-   })(document, 'script');
-</script>
-{% endif %}
 
 {% if site.anchorjs %}
 <!-- async load function -->

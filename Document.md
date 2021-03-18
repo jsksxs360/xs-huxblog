@@ -9,7 +9,7 @@
   * [自我简介](#mini-about-me)
   * [标签云](#featured-tags)
   * [好友链接](#friends)
-* 来必力评论系统
+* 评论系统
   * [网站评论](#comments)
 * Baidu Analytics
   * [网站分析](#analytics)
@@ -127,17 +127,40 @@ friends: [
 
 ### Comments
 
-考虑到多说已经停运，而目前国内的评论系统大多需要备案，因此这里选择来自韩国的[来必力](https://www.livere.com/)。来必力对中文的支持还不错，用户可以通过 QQ、微信、微博等方式登录进行评论，加载速度也还可以。
+考虑到多说已经停运，而目前国内的评论系统大多需要备案，因此这里选择来自韩国的[来必力](https://www.livere.com/)或者通过无后端评论系统[Valine](https://valine.js.org/)自己搭建。来必力对中文的支持还不错，用户可以通过 QQ、微信、微博等方式登录进行评论，加载速度也还可以。Valine则是一款基于[LeanCloud](https://leancloud.cn/)的快速、简洁且高效的无后端评论系统。
 
-如果需要使用，请先去[来必力](https://www.livere.com/)官网注册一个账号，然后在管理页面的代码管理中，找到类似 `<div id="lv-container" data-id="city" data-uid="MTAyMC80MjI1Ny8xODgwNA==">` 的部分，将 data-uid 之后的代码复制到 *_config.yml* 文件中，并且将 `labili` 设置为 true：
+#### 来必力
+
+如果选择使用来必力，请先去[来必力](https://www.livere.com/)官网注册一个账号，然后在管理页面的代码管理中，找到类似 `<div id="lv-container" data-id="city" data-uid="MTAyMC80MjI1Ny8xODgwNA==">` 的部分，将 data-uid 之后的代码复制到 *_config.yml* 文件中，并且将 `labili` 设置为 true，就可以启用了：
 
 ```
-# Livere
+# Livere来必力
 labili: true
 labili_uid: MTAyMC80MjI1Ny8xODgwNA==
 ```
 
 **注意：labili_uid一定要替换成自己网站的uid**
+
+#### Valine
+
+如果选择使用Valine，请先去先[LeanCloud](https://leancloud.cn/)注册一个账号，然后进入[控制台](https://console.leancloud.cn/apps)后点击左上角的`创建应用`按钮：
+
+![](img/add_new_app.png)
+
+一般的个人博客使用，选择“开发版”就足够了。应用创建好以后，进入刚刚创建的应用，选择左下角的 `设置` > `应用Keys`，就能看到应用的 AppID 和 AppKey 了：
+
+![](img/find_id_key.png)
+
+然后将 AppID 和 AppKey 的值复制到 *_config.yml* 文件中，并且将 `valine` 设置为 true，就可以启用了：
+
+```
+# Valine评论系统
+valine: false
+valine_appId: 2cVvVbG3IswhpPz73iAzdy0R-gzGzoHsz
+valine_appKey: oyPqL9vXtuyfiuLx81crp7Ck
+```
+
+**注意：valine_appId和valine_appKey一定要替换成自己应用的AppID和AppKey**
 
 ### Analytics
 

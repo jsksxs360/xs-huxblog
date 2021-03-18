@@ -33,7 +33,12 @@ markdown: kramdown
 kramdown:
   input: GFM                            # use Github Flavored Markdown !important
 
-# Livere
+# Comment settings
+# Valine评论系统
+valine: false
+valine_appId: 2cVvVbG3IswhpPz73iAzdy0R-gzGzoHsz
+valine_appKey: oyPqL9vXtuyfiuLx81crp7Ck
+# Livere来必力
 labili: false                           # whether or not using Livere
 labili_uid: MTAyMC80MjI1Ny8xODgwNA==    # data uid
 
