@@ -188,38 +188,16 @@ ba_track_id: 4cc1f2d8f3067386cc5cdb626a202900
 其实这个 SEO Title 就是定义了 `<head><title>标题</title></head>` 这个里面的东西和多说分享的标题，你可以自行修改的。
 
 ### Install Jekyll
-因为 Jekyll 是用 Ruby 开发的，所以如果你的系统上没有安装，那么首先需要安装 Ruby。
-
-注意，目前 Jekyll 已经更新到 3.x，安装 Jekyll 需要至少 2.0 版本的 Ruby，所以不要直接使用诸如 `sudo apt-get install ruby` 这样的命令安装，因为你软件仓库中的 Ruby 可能不是最新版。你可以使用下面的命令安装（使用 brightbox ppa 仓库）：
+因为 Jekyll 是用 Ruby 开发的，所以如果你的系统上没有安装，那么首先需要安装 Ruby：
 
 ```
-$ sudo apt-get install python-software-properties
-$ sudo apt-add-repository ppa:brightbox/ruby-ng
-$ sudo apt-get update
-$ sudo apt-get install ruby2.1
-$ sudo apt-get install ruby2.1-dev
-```
-安装后，输入 `ruby -v` 检查当前 Ruby 的版本，若正确显示则安装成功。
-
-因为我们要通过 gem 来安装 jekyll，所以首先要确保 gem 已正确安装。输入 `gem -v`，若正确显示 gem 的版本号则安装成功。若报错则可能是因为未安装 Nodejs，可以通过 `sudo apt-get install nodejs` 来安装。
-
-为了加快安装速度，建议将 gem 的数据源改为 [**Ruby China**](https://gems.ruby-china.com/) 的 RubyGems 镜像。
-
-```
-$ gem sources --remove https://rubygems.org/
-$ gem sources --remove http://rubygems.org/
-$ gem sources -a https://gems.ruby-china.com
-$ gem sources -l
-*** CURRENT SOURCES ***
-https://gems.ruby-china.com
-# 请确保只有 https://gems.ruby-china.com
+$ sudo apt install ruby-full
 ```
 
-然后安装 jekyll 和 rdiscount。
+安装后，输入 `ruby -v` 检查当前 Ruby 的版本，若正确显示则安装成功，然后接着安装 jekyll。
 
 ```
-$ sudo gem install jekyll
-$ sudo gem install rdiscount
+$ sudo apt install jekyll
 ```
 
 至此 Jekyll 安装完成，你可以输入 `jekyll -v` 来检查，若正确显示 jekyll 的版本号则安装成功。
